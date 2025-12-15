@@ -1,5 +1,8 @@
 # Aviation MCP Server
 
+[Watch the recording](recording.mp4)
+
+
 Modified aviation network analysis server with SQL queries and temporary datasets.
 
 All code is in the planes.py folder.
