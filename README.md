@@ -1,9 +1,10 @@
 # Aviation MCP Server
 Modified aviation network analysis server with SQL queries and temporary datasets.
 
-All code is in the planes.py folder. \
-All data needed is in the Air_transportation folder. \
-Watch the attched recording to see use cases in action.
+The manual data science is in **Project.ipynb** \
+All MCP code is in the **planes.py** folder. \
+All data needed is in the **Air_transportation** folder. \
+Watch the attched **recording.mp4** to see use cases in action.
 
 ## All Functions
 
