@@ -1,0 +1,203 @@
+# Aviation MCP Server - Chaotic Test Script ✈️
+
+---
+
+## Step 1: Tables Go Brrrr
+```
+yo what tables you got
+```
+**Tests:** `aviation_get_dataset_schema`
+
+---
+
+## Step 2: Who's Popular?
+```
+show me the 15 most popular airports. make plane noises if Dubai is in the top 5
+```
+**Tests:** `aviation_get_hubs`
+
+---
+
+## Step 3: Europe Time
+```
+filter dataset to only Europe. 
+```
+**Tests:** `aviation_create_temp_dataset`
+
+---
+
+## Step 4: Where Am I?
+```
+wait which dataset am i using rn
+```
+**Tests:** `aviation_get_temp_dataset_status`
+
+---
+
+## Step 5: Euro Winners
+```
+top 10 European hubs but explain it like you're a medieval town crier
+```
+**Tests:** `aviation_get_hubs`
+
+---
+
+## Step 6: Country Battle Royale
+```
+which European countries have the most flights? make this dramatic
+```
+**Tests:** `aviation_analyze_countries`
+
+---
+
+## Step 7: Greece Quest
+```
+how do i get from Lisbon to Athens? pretend you're giving directions to a confused pigeon
+```
+**Tests:** `aviation_find_shortest_path`
+
+---
+
+## Step 8: Airport Friend Groups
+```
+find flight communities. which airports are besties?
+```
+**Tests:** `aviation_find_communities`
+
+---
+
+## Step 9: Geographic Weirdos
+```
+show me the most north/south/east/west airports in Switzerland. who won the geography lottery?
+```
+**Tests:** `aviation_find_outliers`
+
+---
+
+## Step 10: Back to Normal
+```
+ok clear the Europe filter i miss the rest of the world
+```
+**Tests:** `aviation_clear_temp_dataset`
+
+---
+
+## Step 11: German Efficiency Mode
+```
+filter to only Lufthansa flights.
+```
+**Tests:** `aviation_create_temp_dataset`
+
+---
+
+## Step 12: Lufthansa Deep Dive
+```
+analyze Lufthansa. where do they fly and what planes do they hoard?
+```
+**Tests:** `aviation_analyze_airline`
+
+---
+
+## Step 13: Two Continents Enter, One Dataset Leaves
+```
+clear that and make a new filter with Europe AND Asia together. continent mashup
+```
+**Tests:** `aviation_clear_temp_dataset` + `aviation_create_temp_dataset`
+
+---
+
+## Step 14: The Bridge People
+```
+which airports are the best at connecting Europe and Asia? who's doing the heavy lifting?
+```
+**Tests:** `aviation_get_transcontinental_hubs`
+
+---
+
+## Step 15: Tea to Ramen
+```
+shortest path London to Tokyo. explain it like I'm planning a spontaneous vacation
+```
+**Tests:** `aviation_find_shortest_path`
+
+---
+
+## Step 16: SQL Flex
+```
+run this query and tell me which Asian countries have the most routes: SELECT src_country, COUNT(*) as routes FROM routes_merged WHERE src_continent = 'AS' GROUP BY src_country ORDER BY routes DESC LIMIT 10
+```
+**Tests:** `aviation_sql_query`
+
+---
+
+## Step 17: International Snobs Only
+```
+clear everything and make a dataset with ONLY intercontinental flights. domestic routes are for cowards
+```
+**Tests:** `aviation_create_temp_dataset`
+
+---
+
+## Step 18: Global Connectors
+```
+which countries connect the continents the most? rank them like Olympic medals
+```
+**Tests:** `aviation_analyze_countries`
+
+---
+
+## Step 19: Dubai Exposed
+```
+clear filter and tell me EVERYTHING about Dubai airport. be dramatic, it deserves it
+```
+**Tests:** `aviation_clear_temp_dataset` + `aviation_get_airport_info`
+
+---
+
+## Step 20: NYC Stalker Mode
+```
+what are the 5 nearest airports to 40.7,-74.0? describe them like they're characters in a sitcom
+```
+**Tests:** `aviation_nearest_neighbors`
+
+---
+
+## Step 21: Plane Census
+```
+show me the top 20 aircraft types globally. roast the boring ones
+```
+**Tests:** `aviation_analyze_equipment`
+
+---
+
+## Step 22: German Geography
+```
+show me Germany's most geographically extreme airports. which one is the chosen one?
+```
+**Tests:** `aviation_find_outliers`
+
+---
+
+## Step 23: USA USA USA
+```
+make a dataset with ONLY US domestic flights using this SQL: SELECT * FROM routes_merged WHERE src_country = 'US' AND dst_country = 'US'
+```
+**Tests:** `aviation_create_temp_dataset`
+
+---
+
+## Step 24: Coast to Coast
+```
+shortest path JFK to LAX, then show me top 10 US hubs. are they what you expected or are you shook?
+```
+**Tests:** `aviation_find_shortest_path` + `aviation_get_hubs`
+
+---
+
+## Step 25: The End
+```
+clear dataset and give me final status. did we survive?
+```
+**Tests:** `aviation_clear_temp_dataset` + `aviation_get_temp_dataset_status`
+
+---
